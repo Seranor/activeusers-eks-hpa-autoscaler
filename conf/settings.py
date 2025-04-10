@@ -46,15 +46,6 @@ try:
     # 直接从项目根目录加载
     config = load_config('config.yaml')
 
-    # 也可以加载子目录中的配置
-    # config = load_config('configs/production.yaml')
-
-    # 或者使用绝对路径
-    # config = load_config('/path/to/your/config.yaml')
-
-    # PROPERTY_ID = 'properties/348548631'
-    # KEY_FILE_LOCATION = r"D:\PycharmProjects\eks-pool-allocator\analytics-read-user.json"
-
     PROPERTY_ID = config["property_id"]
     KEY_FILE_LOCATION = config["key_file_location"]
     AWS_REGION = config["aws_region"]
